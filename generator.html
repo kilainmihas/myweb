@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Django 密碼產生器</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body onload="getTime()">
+    <h1>Password Generator</h1>
+    <h3 class="showtime">Now Time</h3>
+    <form action="">
+       <label for="">密碼長度</label>
+        <select name="length" id="length">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8" selected="selected">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        <label for="">自訂長度</label>
+        <input type="number" name="number-length" id="number-length">
+            <input type="checkbox" name="uppercase" id="confirm">大寫
+            <input type="checkbox" name="number" id="confirm1">數字
+            <input type="checkbox" name="special" id="confirm2">特殊符號
+            <br>
+            <input type="button"  id="password" value="產生" onclick="generate()"></button>
+            <p class="result">Your password:</p>
+        </form>
+    <hr>
+    <a href="index.html">home</a>
+    <script src="js/generator.js"></script>
+</body>
+</html>
